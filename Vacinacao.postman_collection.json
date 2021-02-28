@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "949a9ca4-0608-4820-b29b-e5a4036aa419",
+		"name": "Vacinacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Cadastro Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_completo\": \"Cloe Souza\",\r\n    \"email\": \"c@outlook.com\",\r\n    \"data_nascimento\": \"19/05/2001\",\r\n    \"cpf\" : 12345698725\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacinacao",
+			"item": [
+				{
+					"name": "Aplicação de Vacinação",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_vacina\" : \"Vacina\",\r\n    \"data_vacinacao\" : \"02/03/2021\",\r\n    \"email\" : \"c@outlook.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vacinacao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vacinacao"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
